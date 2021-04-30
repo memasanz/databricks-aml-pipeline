@@ -17,3 +17,4 @@ class Env:
     workspace_name: Optional[str] = os.environ.get("WORKSPACE_NAME")
     resource_group: Optional[str] = os.environ.get("RESOURCE_GROUP")
     subscription_id: Optional[str] = os.environ.get("SUBSCRIPTION_ID")
+    source_directory: Optional[str] = os.environ.get("SOURCE_DIR")
