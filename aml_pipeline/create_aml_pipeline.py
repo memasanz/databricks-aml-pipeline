@@ -12,7 +12,6 @@ from azureml.pipeline.core import PipelineData
 from azureml.pipeline.steps import PythonScriptStep
 from azureml.core import Experiment
 from azureml.pipeline.core import Pipeline
-from azureml.widgets import RunDetails
 from azureml.core import Model
 import logging
 import sys
