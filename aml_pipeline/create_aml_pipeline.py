@@ -141,6 +141,7 @@ def main():
     # Step 1, Run the data prep script
     prep_step = PythonScriptStep(name = "Prepare Data",
                                     script_name = "prep_diabetes.py",
+                                    source_directory = '.',
                                     arguments = ['--input-data', diabetes_ds.as_named_input('raw_data'),
                                                  '--prepped-data', prepped_data_folder],
                                     outputs=[prepped_data_folder],
@@ -150,6 +151,7 @@ def main():
 
     # Step 2, run the training script
     train_step = PythonScriptStep(name = "Train and Register Model",
+                                    source_directory = '.',
                                     script_name = "train_diabetes.py",
                                     arguments = ['--training-folder', prepped_data_folder],
                                     inputs=[prepped_data_folder],
