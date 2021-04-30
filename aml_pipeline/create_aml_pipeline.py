@@ -182,7 +182,6 @@ def main():
     experiment = Experiment(workspace=ws, name = 'jlg-exp')
     pipeline_run = experiment.submit(pipeline, regenerate_outputs=True)
     print("Pipeline submitted for execution.")
-    RunDetails(pipeline_run).show()
     pipeline_run.wait_for_completion(show_output=True)
 
 
