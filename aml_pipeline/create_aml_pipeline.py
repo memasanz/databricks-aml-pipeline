@@ -24,7 +24,7 @@ def main():
     print(e.source_directory)
     
     
-    files = os.listdir(e.source_directory + '/aml_pipeline')
+    files = os.listdir('./aml_pipeline')
     for f in files:
         print(f)
     
