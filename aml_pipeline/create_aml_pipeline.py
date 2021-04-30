@@ -19,6 +19,16 @@ from aml_pipeline.env_variables import Env
 
 def main():
     e = Env()
+    
+    print('********************')
+    print(e.source_directory)
+    print('***************')
+    
+    files = os.listdir(e.source_directory)
+    for f in files:
+        print(f)
+    
+    
     workspace_name = e.workspace_name
     subscription_id = e.subscription_id
     resource_group = e.resource_group
