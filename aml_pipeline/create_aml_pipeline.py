@@ -15,7 +15,7 @@ from azureml.pipeline.core import Pipeline
 from azureml.core import Model
 import logging
 import sys
-
+from aml_pipeline.env_variables import Env
 
 def main():
     e = Env()
