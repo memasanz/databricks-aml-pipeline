@@ -19,14 +19,11 @@ from aml_pipeline.env_variables import Env
 
 def main():
     e = Env()
-
+    workspace_name = e.workspace_name
+    subscription_id = e.subscription_id
+    resource_group = e.resource_group
+    
     #Connect to AML Workspace
-    ws = Workspace.get(
-        name=e.workspace_name,
-        subscription_id=e.subscription_id,
-        resource_group=e.resource_group,
-    )
-
     print('workspace_name = ' + workspace_name)
     print('subscription_id = ' + subscription_id)
     print('resource_group = ' + resource_group)
