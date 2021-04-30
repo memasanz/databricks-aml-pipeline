@@ -22,6 +22,10 @@ def main():
     workspace_name=sys.argv[1]
     subscription_id =sys.argv[2]
     resource_group =sys.argv[3]
+    print('workspace_name = ' + workspace_name)
+    print('subscription_id = ' + subscription_id)
+    print('resource_group = ' + resource_group)
+    
     
     # Load the workspace from the saved config file
     ws = Workspace.get(
